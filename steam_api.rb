@@ -5,7 +5,8 @@ require 'httparty'
 require 'selenium-webdriver'
 
 API_KEY = ENV['STEAM_API_KEY']
-WISHLIST_URL = "https://api.steampowered.com/IWishlistService/GetWishlist/v1/?key=#{API_KEY}&steamid=76561197993313205&data_request=true".freeze
+STEAM_ID = ENV['STEAM_ID']
+WISHLIST_URL = "https://api.steampowered.com/IWishlistService/GetWishlist/v1/?key=#{API_KEY}&steamid=#{STEAM_ID}&data_request=true".freeze
 STEAM_APP_DETAILS_URL = 'https://store.steampowered.com/api/appdetails?appids='.freeze
 CDKEYS_GENERAL_SEARCH_URL = 'https://www.cdkeys.com/#q='.freeze
 
