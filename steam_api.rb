@@ -70,7 +70,6 @@ class WishListCompare
         driver.quit
       end
       # Write/update CSV after all apps processed
-      binding.pry
       create_or_update_csv
     end
 
